@@ -96,6 +96,9 @@ h1 {
 .five h1 {
 	color:#f5f5f5;
 }
+.five h2 {
+	font-size: 15px;
+}
 .blogcontainer {
     width: 960px;
 }
