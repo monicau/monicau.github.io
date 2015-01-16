@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monica Ung</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/classie.js"></script>
+  <script type="text/javascript" src="js/elastic_grid.encode.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+      <div class="one">
+        <div class="container">
+<!--           <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/blog">Blog</a></li>
+          </ul> -->
+          <div class="big">
+          <h1>Hello, world! I'm <b>Monica</b>.</h1>
+          <h2>I'm studying Computer Science at McGill</h2>
+        </div>
+        </div>
+      </div>
+
+      <div class="section two">
+        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h1>I like to design & code.</h1>
+      </div>
+
+      <div class="section three">
+        <h1 class="pad">Web Projects</h1>
+        <div class="container">
+          <div id="elastic_grid_demo"></div>
+          <script type="text/javascript">
+          $(function(){
+            $("#elastic_grid_demo").elastic_grid({
+              'items' :
+              [
+              {
+                'title'         : 'McGill School of Computer Science',
+                'description'   : ' Develop, increase functionality and add features to the Computer Science department website in collaboration with other students and staffs. Created internal forms for professors and students to use to facilitate applications and content additions.  Implemented news system and search feature. Improved visual and structural organization of website.',
+                'thumbnail'     : ['img/projects/socs.jpg'],
+                'large'         : ['img/projects/full/socs.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://cs.mcgill.ca' },
+                ],
+                'tags'          : ['']
+              },
+              {
+                'title'         : 'Tactical Fire Equipment',
+                'description'   : 'Design website and develop a catalog system for their products using Django and Bootstrap.',
+                'thumbnail'     : ['img/projects/tacticalfire.jpg'],
+                'large'         : ['img/projects/full/tacticalfire.jpg'],
+                'button_list'   :
+                [
+
+                ],
+                'tags'          : ['']
+              },                
+              {
+                'title'         : 'McGill Safety Week 2014',
+                'description'   : 'Design a responsive and mobile-friendly website for University Safety\'s annual Safety Week event. Implemented a registration system that supports capacity, sends notifications and generates reports using PHP and MySQL.',
+                'thumbnail'     : ['img/projects/safetyweek.jpg'],
+                'large'         : ['img/projects/full/safetyweek.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://safetyweek.universitysafety.mcgill.ca/' },
+                ],
+                'tags'          : ['']
+              },
+              {
+                'title'         : 'Digital Literacy for Preschoolers (Under construction)',
+                'description'   : 'Design a website for a conference hosted by McGill School of Communication Sciences and Disorders. Set up, customize and maintain an abstract submission system.',
+                'thumbnail'     : ['img/projects/digitalmedia.jpg'],
+                'large'         : ['img/projects/full/digitalmedia.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://digitalliteracyforpreschoolers.conference.mcgill.ca/' },
+                ],
+                'tags'          : ['']
+              },
+              {
+                'title'         : 'Voice Lab',
+                'description'   : 'Design a website for faculty professor at the School of Communication Sciences and Disorders, McGill.',
+                'thumbnail'     : ['img/projects/voicelab.jpg'],
+                'large'         : ['img/projects/full/voicelab.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://voice.lab.mcgill.ca/' },
+                ],
+                'tags'          : ['']
+              },
+              {
+                'title'         : 'McGill International Week',
+                'description'   : 'Design a website for McGill Office of International Education\'s annual week-long event.',
+                'thumbnail'     : ['img/projects/internationalweek.jpg'],
+                'large'         : ['img/projects/full/internationalweek.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://internationalweek.sll.mcgill.ca/' },
+                ],
+                'tags'          : ['']
+              },
+              ]
+            });
+          });
+          </script>
+      </div>
+    </div>
+
+<div class="section four">
+  <h1 class="pad">Extracurricular</h1>
+  <div class="container">
+  <div id="elastic_grid_demo2"></div>
+          <script type="text/javascript">
+          $(function(){
+            $("#elastic_grid_demo2").elastic_grid({
+              'items' :
+              [
+              {
+                'title'         : 'HackMIT 2014',
+                'description'   : 'Inspired by an incredible game called <a href=\"http://www.starwhal.com/\" target=\"_blank\">Starwhal</a> and interested in learning more about Arduino, we created a game in Unity where two players control their narwhal through the Arduino.',
+                'thumbnail'     : ['img/projects/doubleporpoisecontroller.jpg'],
+                'large'         : ['img/projects/doubleporpoisecontroller.jpg'],
+                'button_list'   :
+                [
+                { 'title':'View', 'url' : 'http://challengepost.com/software/double-porpoise-controller' },
+                ],
+                'tags'          : ['']
+              },
+              {
+                'title'         : 'Gamerella Game Jam 2014',
+                'description'   : 'Theme: Boss Up.  We created a 2D game in Unity where your character is a boss that tries to influence all employees on the platform (by doing an action) before the time runs out.',
+                'thumbnail'     : ['img/projects/bossup.jpg'],
+                'large'         : ['img/projects/full/bossup.gif'],
+                'button_list'   :
+                [
+
+                ],
+                'tags'          : ['']
+              },                
+              ]
+            });
+          });
+          </script>
+        </div>
+</div>
+
+<div class="five section">
+  <h1 class=""><a href="mailto:monica.ung[at]mail.mcgill.ca">Drop me a line!</a></h1>
+</div>
+
+</body>
+</html>
